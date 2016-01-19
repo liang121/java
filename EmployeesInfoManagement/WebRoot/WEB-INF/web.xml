@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>StudentInfoManage</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>departmentListServlet</servlet-name>
+  	<servlet-class>web.departmentListServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>departmentDeleteServlet</servlet-name>
+  	<servlet-class>web.departmentDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>departmentSaveServlet</servlet-name>
+  	<servlet-class>web.departmentSaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>employeesListServlet</servlet-name>
+  	<servlet-class>web.employeesListServlet</servlet-class>
+  </servlet>
+   <servlet>
+  	<servlet-name>departmentComboListServlet</servlet-name>
+  	<servlet-class>web.departmentComboListServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>employeesDeleteServlet</servlet-name>
+  	<servlet-class>web.employeesDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>employeesSaveServlet</servlet-name>
+  	<servlet-class>web.employeesSaveServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>loginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>departmentListServlet</servlet-name>
+  	<url-pattern>/departmentList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>departmentDeleteServlet</servlet-name>
+  	<url-pattern>/departmentDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>departmentSaveServlet</servlet-name>
+  	<url-pattern>/departmentSave</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>employeesListServlet</servlet-name>
+  	<url-pattern>/employeesList</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>departmentComboListServlet</servlet-name>
+  	<url-pattern>/departmentComboList</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>employeesDeleteServlet</servlet-name>
+  	<url-pattern>/employeesDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>employeesSaveServlet</servlet-name>
+  	<url-pattern>/employeesSave</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
